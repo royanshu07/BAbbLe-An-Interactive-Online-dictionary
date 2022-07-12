@@ -6,7 +6,7 @@ main_menu=rf'''
 {logo}
  MAIN MENU-
  1) Search a word
- 2) Quit
+ 2) Quit.
 '''
 
 
