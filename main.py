@@ -10,7 +10,7 @@ main_menu='''
  * WELCOME TO **** BAbbLe:An Interactive Online dictionary ***
  MAIN MENU-
  1) Search a word
- 2) Quit
+ 2) Quit.
 '''
 
 
