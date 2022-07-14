@@ -113,7 +113,7 @@ def search_word(word):
     letter=word[0].upper()
 
     
-    f=open(f'E:\\IT WORKSHOP PROJECT\\data\\D{letter}.json')
+    f=open(f"D:\IT\data\\D{letter}.json")
     data=f.read()
     D=json.loads(data)
     f.close()
