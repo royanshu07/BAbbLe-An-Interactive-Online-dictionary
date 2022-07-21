@@ -1,4 +1,5 @@
-import sys, a1,os,a2
+import sys,a1,os,a2,a3,t2
+
 
 
 
@@ -10,20 +11,22 @@ main_menu='''
  * WELCOME TO **** BAbbLe:An Interactive Online dictionary ***
  MAIN MENU-
  1) Search a word
- 2) Quit.
+ 2) play word jumble
+ 3) Quit.
 '''
 
 
 
 
-msg='Enter your choice from 1-2: '
+msg='Enter your choice from 1-3: '
 while True:
     a2.speak("welcome to babble")
     print(main_menu)
-    a2.speak("press 1 to search and 2 to exit the dictionary")
+    a2.speak("press 1 to search and 2 to play word jumble and 3 to quit")
 
 
     choice = input(msg)
+    
     if choice =='1':
         a2.speak('Press t for text search and v for voice search')
         print('Press t for text search and v for voice search')
@@ -33,8 +36,9 @@ while True:
             word=input('\nEnter a word: ')
             a1.search_word(word)
         elif search_option=='v':
-            word=a2.get_audio()
+            word=t2.get_audio()
             a1.search_word(word)
+            
         else:
             msg=("enter t or v for search")
             a2.speak("enter t or v for search")
@@ -47,9 +51,11 @@ while True:
             a2.speak(word)
         input('Enter to continue...')
 
-    
-
     if choice =='2':
+        a3.game1()
+        
+
+    if choice =='3':
         print('\n\n peace out  ')
         a2.speak("peace out")
         break
