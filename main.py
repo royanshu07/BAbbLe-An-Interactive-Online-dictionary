@@ -1,4 +1,4 @@
-import sys,a1,os,a2,a3,t2
+import sys,a1,os,a2,a3,t2,learn
 
 
 
@@ -12,17 +12,18 @@ main_menu='''
  MAIN MENU-
  1) Search a word
  2) play word jumble
- 3) Quit.
+ 3) learn new word
+ 4) Quit.
 '''
 
 
 
 
-msg='Enter your choice from 1-3: '
+msg='Enter your choice from 1-4: '
 while True:
     a2.speak("welcome to babble")
     print(main_menu)
-    a2.speak("press 1 to search and 2 to play word jumble and 3 to quit")
+    a2.speak("press 1 to search and 2 to play word jumble and 3 to learn new word and 4 to quit")
 
 
     choice = input(msg)
@@ -53,9 +54,11 @@ while True:
 
     if choice =='2':
         a3.game1()
-        
 
-    if choice =='3':
+    if choice=='3':
+        learn.learn_new()
+
+    if choice =='4':
         print('\n\n peace out  ')
         a2.speak("peace out")
         break
