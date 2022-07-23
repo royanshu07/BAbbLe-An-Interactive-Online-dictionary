@@ -1,4 +1,4 @@
-import sys,a1,os,a2,a3,t2,learn
+import sys,a1,os,a2,game,voice,learn
 
 
 
@@ -37,7 +37,7 @@ while True:
             word=input('\nEnter a word: ')
             a1.search_word(word)
         elif search_option=='v':
-            word=t2.get_audio()
+            word=voice.get_audio()
             a1.search_word(word)
             
         else:
@@ -53,7 +53,7 @@ while True:
         input('Enter to continue...')
 
     if choice =='2':
-        a3.game1()
+        game.game1()
 
     if choice=='3':
         learn.learn_new()
