@@ -2,6 +2,8 @@ import json, time
 import os
 from difflib import SequenceMatcher as SM
 import sys
+import search
+import google_python,a2
 
 
 
@@ -14,6 +16,7 @@ D={}
 D_List=[]
 
 
+    
 def __get_words(word, D_List):
     if word.upper() in D_List:
         return word.upper()
@@ -125,6 +128,10 @@ def search_word(word):
     if word!=None:
         data=D[word]
         print_meanings(word, data)
+        a2.speak("Want to google search? IF yes press 'g'")
+        choose=input("Want to google search? IF yes press 'g'")
+        if choose=='g':
+            google_python.google(word)
 
 
     return word
