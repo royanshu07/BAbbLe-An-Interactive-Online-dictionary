@@ -13,7 +13,7 @@ Team: Group No.7 (B.Tech CSE- AI 2nd Semester)
 02301172021 Anshu Roy
 
 04201172021 Srishti Gupta
--- https://github.com/srishtig2412
+
 
 Objectives of the project:
 
