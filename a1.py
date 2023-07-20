@@ -2,7 +2,7 @@ import json, time
 import os
 from difflib import SequenceMatcher as SM
 import sys
-import search
+# import search
 import google_python,a2
 
 
@@ -114,9 +114,9 @@ def search_word(word):
     global D_List, D
 
     letter=word[0].upper()
-
+  
     
-    f=open(f"D:\IT\data\\D{letter}.json")
+    f=open(f"BAbbLe-An-Interactive-Online-dictionary\\data\\D{letter}.json")
     data=f.read()
     D=json.loads(data)
     f.close()
